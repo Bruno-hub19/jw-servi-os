@@ -1,0 +1,103 @@
+.mainTextContainer {
+    padding: 2rem;
+}
+
+.mainTextContainer h1 {
+    justify-self: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--green-9C);
+}
+
+.mainTextContainer p {
+    justify-self: center;
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--gray-74);
+}
+
+.serviceGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 16px;
+}
+
+.serviceGridContainer > div:first-child {
+    min-height: 340px;
+    background: var(--green-9C);
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom-left-radius: 174px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.serviceGridContainer > div:first-child h1 {
+    color: var(--white);
+    text-align: end;
+    font-weight: bold;
+    max-width: 300px;
+    font-size: 2.5rem;
+}
+
+.serviceGridContainer div + div {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.serviceGridContainer div p {
+    color:  var(--gray-74);
+    line-height: 25px;
+    text-align: justify;
+    font-size: 1.125rem;
+}
+
+.serviceGridContainer div button {
+    background: none;
+    border: none;
+    display: flex;
+    max-width: fit-content;
+    margin-top: 16px;
+}
+
+.serviceGridContainer div button a {
+    text-decoration: none;
+    color: var(--white);
+    background: var(--gray-74);
+    border-radius: 5px;
+    border: 1px solid var(--gray-74);
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+
+    transition: ease-in .15s background-color;
+}
+
+.serviceGridContainer div button a:hover {
+    background: none;
+    color: var(--black-1F);
+    border: 1px solid var(--black-1F);
+}
+
+@media only screen and (max-width: 800px) {
+    .serviceGridContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    .serviceGridContainer > div:first-child h1 {
+        text-align: center;
+        max-width: 100vw;    
+    }
+
+    .serviceGridContainer > div:first-child {
+        justify-content: center;
+    }
+}

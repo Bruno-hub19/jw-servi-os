@@ -1,0 +1,74 @@
+.mainTextContainer {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.75turn,#7FA6B9, #023663);
+}
+
+.mainTextContainer h1 {
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+}
+
+.mainTextContainer p {
+    color: var(--white);
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.gridTextContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin-bottom: 16px;
+    margin-top: -30px;
+}
+
+.gridTextContainer div:first-child {
+    background: var(--gray-DD);
+    padding: 1rem;
+    max-height: 156px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.gridTextContainer div:first-child h1 {
+    font-size: 1.5625rem;
+    color: var(--gray-74);
+    font-weight: bold;
+    text-align: end;
+}
+
+.gridTextContainer div + div {
+    background: var( --gray-DD);
+    min-height: 270px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 136px;
+}
+
+.gridTextContainer div + div p {
+    color: var(--gray-74);
+    font-size: 1.125rem;
+    padding: 2rem;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 880px) {
+    .gridTextContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .gridTextContainer div + div {
+        min-height: 440px;
+    }
+}

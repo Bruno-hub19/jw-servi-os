@@ -1,0 +1,64 @@
+.mainTextContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.75turn,#7FA6B9, #023663);
+}
+
+.mainTittle {
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+}
+
+.mainTextContainer p {
+    color: var(--white);
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gridContactContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.gridContactContainer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray-DD);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.gridContactContainer > div h1 {
+    color: var(--gray-74);
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    line-height: 30px;
+}
+
+.gridContactContainer > div span {
+    color: var(--black-1F);
+    font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 740px) {
+    .gridContactContainer {
+        grid-template-columns: 1fr;
+    }
+}

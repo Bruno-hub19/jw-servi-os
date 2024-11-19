@@ -1,0 +1,76 @@
+.imageContainer {
+    position: relative;
+}
+
+.cover {
+    width: 100%;
+    min-height: 460px;
+    object-fit: cover;
+}
+
+.textContainer {
+    max-width: 570px;
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    padding: 2rem;
+}
+
+.textContainer h1 {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.textContainer h1 + h1 {
+    margin-bottom: 2rem;
+}
+
+.textContainer p {
+    font-size: 1.25rem;
+    color: var(--white);
+    line-height: 25px;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+
+.textContainer span {
+    font-weight: bold;
+    color: var(--green-9C);
+}
+
+.textContainer button {
+    border: none;
+    display: flex;
+    background: none;
+}
+
+.textContainer button a {
+    font-size: 1rem;
+    color: var(--black-1F);
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--green-9C);
+    border-radius: 5px;
+    padding: 0.8rem 1rem;
+
+    transition: background-color .15s ease-in-out;
+}
+
+.textContainer button:hover a {
+    color: var(--white);
+    background: var(--gray-74);
+}
+
+@media only screen and (max-width: 1024px) {    
+    .textContainer {
+        right: 0px;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .cover {
+        height: 650px;
+    }
+}
